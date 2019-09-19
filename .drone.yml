@@ -9,3 +9,5 @@ steps:
   commands:
   - echo "selamat datang bangsaaaattt"
   - ls -l
+  - sleep 30
+  - echo "wwkwkwkwkwkw"
