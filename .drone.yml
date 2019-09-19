@@ -7,7 +7,7 @@ steps:
 - name: fetch
   image: alpine
   commands:
-  - git fetch -a
+  - echo "git fetch -a"
 
 - name: coverage test
   image: alpine
