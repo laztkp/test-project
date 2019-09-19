@@ -5,24 +5,24 @@ name: default
 
 steps:
 - name: fetch
-  image: alpine:git
+  image: alpine
   commands:
   - git fetch -a
 
 - name: coverage test
-  image: alpine:git
+  image: alpine
   command:
   - echo "go test"
   - sleep 3
 
 - name: building
-  image: alpine:git
+  image: alpine
   command:
   - echo "go build"
   - sleep 3
 
 - name: deploy
-  image: alpine:git
+  image: alpine
   command:
   - echo "fab deploy -R production"
   - sleep 3
