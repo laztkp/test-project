@@ -1,9 +1,16 @@
-nd: pipeline
-type: docker
+---
+kind: pipeline
+type: exec
 name: default
 
+platform:
+  os: linux
+  arch: amd64
+
 steps:
-- name: build
-  image: alpine
+- name: greeting
   commands:
-  - echo "kontol"
+  - echo "selamat datang bangsaaaattt"
+- name: input
+  command:
+  - echo "masukin dong sayang"
