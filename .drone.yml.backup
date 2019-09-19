@@ -1,0 +1,28 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: fetch
+  image: alpine
+  commands:
+  - echo "git fetch -a"
+
+- name: coverage test
+  image: alpine
+  command:
+  - echo "go test"
+  - sleep 3
+
+- name: building
+  image: alpine
+  command:
+  - echo "go build"
+  - sleep 3
+
+- name: deploy
+  image: alpine
+  command:
+  - echo "fab deploy -R production"
+  - sleep 3
