@@ -11,6 +11,9 @@ pipeline:
   run:
     image: alpine
     commands: echo "go run"
+  build docker:
+    image: alpine
+    commands: echo "docker build -t ."
   deploy:
     image: alpine
     commands: echo "fab deploy -R production"
