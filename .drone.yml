@@ -8,6 +8,4 @@ steps:
   image: alpine
   commands:
   - echo "selamat datang bangsaaaattt"
-- name: input
-  command:
-  - echo "masukin dong sayang"
+  - ls -l
