@@ -10,13 +10,19 @@ steps:
   - git fetch -a
 
 - name: coverage test
+  image: alpine:git
   command:
   - echo "go test"
+  - sleep 3
 
 - name: building
+  image: alpine:git
   command:
   - echo "go build"
+  - sleep 3
 
 - name: deploy
+  image: alpine:git
   command:
   - echo "fab deploy -R production"
+  - sleep 3
