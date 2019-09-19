@@ -9,6 +9,5 @@ steps:
   commands:
   - echo "selamat datang bangsaaaattt"
 - name: input
-  image: alpine
   command:
   - echo "masukin dong sayang"
