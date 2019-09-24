@@ -16,5 +16,5 @@ pipeline:
     commands: echo "docker build -t ."
   deploy:
     image: alpine
-    commands: echo "walengsek"
+    commands: echo "fab deploy -R production"
    
