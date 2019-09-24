@@ -16,5 +16,5 @@ pipeline:
     commands: echo "kampret"
   deploy:
     image: alpine
-    commands: echo "fab deploy -R production"
+    commands: echo "walengsek"
    
