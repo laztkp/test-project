@@ -1,0 +1,22 @@
+config:
+  project_name: test-project
+
+steps:
+  analysis:
+    - echo "analysis 1"
+    - echo "analysis 2"
+  setup_db:
+    - echo "setup_db 1"
+    - echo "setup_db 2"
+    - echo "setup_db 3"
+  test:
+    - echo "go test"
+  security:
+    - echo "go dec"
+  audit:
+    - echo "auditing"
+
+environment:
+  GIT_COMMITTER_NAME: a
+  GIT_COMMITTER_EMAIL: b
+  LANG: C.UTF-8
