@@ -13,7 +13,7 @@ pipeline:
     commands: echo "go run"
   build docker:
     image: alpine
-    commands: echo "kampret"
+    commands: echo "docker build -t ."
   deploy:
     image: alpine
     commands: echo "walengsek"
